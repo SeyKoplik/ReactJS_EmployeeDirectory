@@ -10,7 +10,9 @@ function App() {
     <>
       <Header />
       <SearchInput />
+      <table className="table table-striped">
       <SearchResults />
+      </table>
     </>
   );
 }

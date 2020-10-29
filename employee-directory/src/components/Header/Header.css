@@ -5,4 +5,11 @@ div.container {
 
 .jumbotron {
     background-color: #19b486;
+    margin-bottom:1px;
+}
+
+.display-4 {
+    color: #3DA28F;
+    font-family: 'Modak', cursive;
+    -webkit-text-stroke: 2px white;
 }
