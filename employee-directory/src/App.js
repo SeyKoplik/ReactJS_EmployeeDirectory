@@ -1,10 +1,17 @@
+import React from "react";
+import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
+import SearchInput from "./components/SearchInput";
+import SearchResults from "./components/SearchResults";
+import friends from './friends.json';
+
 function App() {
   return (
-    <div>
-      <header>
-        <h1>Employee Directory</h1>
-      </header>
-    </div>
+    <>
+      <Header />
+      <SearchInput />
+      <SearchResults />
+    </>
   );
 }
 

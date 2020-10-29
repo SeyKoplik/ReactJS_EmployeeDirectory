@@ -1,0 +1,25 @@
+.form {
+    text-align: center;
+}
+
+.searchInputBox {
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 10px 20px 10px 10px;
+  }
+
+.searchInputBtn {
+    background-color: #F783AC;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 8px;
+    margin: 4px 2px;
+}
