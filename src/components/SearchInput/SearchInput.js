@@ -5,8 +5,9 @@ function SearchInput(props) {
     return (
         <>
             <form className="form">
-                <p>Please enter a search parameter for your directory to render an employee data list per your request </p>
-                <input className="searchInputBox" type="text" name="search" placeholder="Search.." onChange={props.handleInputChange}/> <button className="searchInputBtn" onClick={() =>  props.handleFormSubmit()}>FIND!</button>
+                <input className="searchInputBox" type="text" name="search" placeholder="Begin typing to search employee here!" onChange={props.handleInputChange}/> 
+                
+                {/* <button className="searchInputBtn" onClick={() =>  props.handleFormSubmit()}>FIND!</button> */}
             </form>
         </>
     )

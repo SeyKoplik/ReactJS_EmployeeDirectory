@@ -8,10 +8,11 @@ function TableHeader(props) {
           <thead className="tableHead">
             <tr>
               <th scope="col">Photo</th>
-              <th scope="col">Employee Name <i className="fas fa-sort fa-lg" onClick={() => props.handleSortClick()}></i></th>
-              <th scope="col">Telephone #</th>
-              <th scope="col">Email Address</th>
-              <th scope="col">Birthday</th>
+              <th scope="col" className="hover">Employee Name <i className="fas fa-sort" onClick={() => props.handleSortClick()}></i>
+              </th>
+              <th scope="col"className="hover">Telephone No. <i className="fas fa-sort" onClick={() => props.handleSortClickPhone()}></i></th>
+              <th scope="col" className="hover">Email Address <i className="fas fa-sort" onClick={() => props.handleSortClickEmail()}></i></th>
+              <th scope="col" className="hover">Birthday <i className="fas fa-sort" onClick={() => props.handleSortClickBday()}></i></th>
             </tr>
           </thead>
         </>

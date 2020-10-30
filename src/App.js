@@ -16,86 +16,124 @@ class App extends React.Component {
     // const employees = this.state.employees;
     let query = event.target.value;
     const sortOrder = this.state.sortOrder
-
     // start search input change here to filter
-    const filteredName = employees.filter(result =>
-      result.name.toLowerCase().toString().includes(query)
-    );
-    const filteredBirthday = employees.filter(result =>
-      result.birthday.toLowerCase().toString().includes(query)
-      // ||
-      // result.name.toLowerCase().toString().includes(query)
-    );
-    const filteredEmail = employees.filter(result =>
-      result.email.toLowerCase().toString().includes(query)
-    );
-    const filteredPhone = employees.filter(result =>
+    // const filteredName = employees.filter(result =>
+    //   result.name.toLowerCase().toString().includes(query)
+    // );
+    // const filteredBirthday = employees.filter(result =>
+    //   result.birthday.toLowerCase().toString().includes(query)
+    // );
+    // const filteredEmail = employees.filter(result =>
+    //   result.email.toLowerCase().toString().includes(query)
+    // );
+    // const filteredPhone = employees.filter(result =>
+    //   result.phone.toLowerCase().toString().includes(query)
+    // );
+    const filteredEmployees = employees.filter(result =>
+      result.name.toLowerCase().toString().includes(query) ||
+      result.birthday.toLowerCase().toString().includes(query) ||
+      result.email.toLowerCase().toString().includes(query) ||
       result.phone.toLowerCase().toString().includes(query)
     );
-    // FILTERED SEARCH ONLY SUCCESSFULY SEARCHES FOR NAMES IN THE LIST.. HOW DO I GET TO SEARCH ALL CRITERIA AVAILABLE
-    const filteredEmployees = filteredName
-
-    // const filteredEmployees = filteredName || filteredBirthday || filteredEmail || filteredPhone
 
     this.setState({ employees: filteredEmployees })
   }
 
   handleFormSubmit = () => {
     event.preventDefault();
-
-    const employees = this.state.employees
-    const query = event.target.value;
-
-    if (query === "" || this.state.search === "") {
-      // THIS ALERT IS SHOWING EVEN WHEN THERE IS SOMETHING IN THE INPUT BOX WHEN YOU CLICK 'FIND!' BUTTON
-      alert(`You need to enter a search`);
-      this.setState({ employees: employees });
-    } else {
-      const filteredName = employees.filter(result =>
-        result.name.toLowerCase().toString().includes(query)
-      );
-      console.log(`FILTER THROUGH RESULTS FOR SEARCH!`);
-
-      this.setState({ employees: filteredName })
-    }
-
   }
-  
+
   // get sort order here
-  compareSorting(a, b) {
-    // return first one first
-    // if (state.sortOrder === "ascending") {
-      if (a.name > b.name) return 1;
-      // return last one first
-      if (b.name > a.name) return -1;
-    // }
-    // else {
-    //   if (a.name > b.name) return -1;
-    //   if (b.name > a.name) return 1;
-    // }
+  compareSortASC(a, b) {
+    if (a.name > b.name) return 1;
+    if (b.name > a.name) return -1;
     return 0;
-
   };
-
+  compareSortDESC(a, b) {
+    if (a.name > b.name) return -1;
+    if (b.name > a.name) return 1;
+    return 0;
+  };
   handleSortClick = () => {
     event.preventDefault();
-    // Sort Order Toggle
-    // toggle from ascending to descending
-    // TableHead should have clickable sort icon
-    // do an if statement of ascending and descending
-    // to comparesortdescending 
-
-    // ONLY ABLE TO DO AN ASCENDING SORT FOR THE NAMES, HOW CAN I TOGGLE TO DESCENDING?? HOW TO APPLY TO OTHER CATEGORIES??
     const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
-
     this.setState({ sortOrder: sortOrderNow })
-
-    const sortedEmployees = this.state.employees.sort(this.compareSorting);
-
+    let sortedEmployees = "";
+    if (this.state.sortOrder === "ascending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortASC);
+    } else if (this.state.sortOrder === "descending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortDESC);
+    }
     this.setState({ employees: sortedEmployees })
+  }
 
-    console.log(`CLICKED TO SORT!`);
+  compareSortASCbday(a, b) {
+    if (a.birthday > b.birthday) return 1;
+    if (b.birthday > a.birthday) return -1;
+    return 0;
+  };
+  compareSortDESCbday(a, b) {
+    if (a.birthday > b.birthday) return -1;
+    if (b.birthday > a.birthday) return 1;
+    return 0;
+  };
+  handleSortClickBday = () => {
+    event.preventDefault();
+    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+    this.setState({ sortOrder: sortOrderNow })
+    let sortedEmployees = "";
+    if (this.state.sortOrder === "ascending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortASCbday);
+    } else if (this.state.sortOrder === "descending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortDESCbday);
+    }
+    this.setState({ employees: sortedEmployees })
+  }
 
+  compareSortASCphone(a, b) {
+    if (a.phone > b.phone) return 1;
+    if (b.phone > a.phone) return -1;
+    return 0;
+  };
+  compareSortDESCphone(a, b) {
+    if (a.phone > b.phone) return -1;
+    if (b.phone > a.phone) return 1;
+    return 0;
+  };
+  handleSortClickPhone = () => {
+    event.preventDefault();
+    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+    this.setState({ sortOrder: sortOrderNow })
+    let sortedEmployees = "";
+    if (this.state.sortOrder === "ascending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortASCphone);
+    } else if (this.state.sortOrder === "descending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortDESCphone);
+    }
+    this.setState({ employees: sortedEmployees })
+  }
+
+  compareSortASCemail(a, b) {
+    if (a.email > b.email) return 1;
+    if (b.email > a.email) return -1;
+    return 0;
+  };
+  compareSortDESCemail(a, b) {
+    if (a.email > b.email) return -1;
+    if (b.email > a.email) return 1;
+    return 0;
+  };
+  handleSortClickEmail = () => {
+    event.preventDefault();
+    const sortOrderNow = this.state.sortOrder == "descending" ? "ascending" : "descending";
+    this.setState({ sortOrder: sortOrderNow })
+    let sortedEmployees = "";
+    if (this.state.sortOrder === "ascending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortASCemail);
+    } else if (this.state.sortOrder === "descending") {
+      sortedEmployees = this.state.employees.sort(this.compareSortDESCemail);
+    }
+    this.setState({ employees: sortedEmployees })
   }
 
   render() {
@@ -107,9 +145,13 @@ class App extends React.Component {
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
         />
-        <table className="table">
-          <TableHeader handleSortClick={this.handleSortClick} />
-
+        <table className="table table-striped">
+          <TableHeader 
+          handleSortClick={this.handleSortClick}
+          handleSortClickBday={this.handleSortClickBday}
+          handleSortClickPhone={this.handleSortClickPhone}
+          handleSortClickEmail={this.handleSortClickEmail} />
+          <tbody>
           {this.state.employees.map(individual =>
             <SearchResults
               name={individual.name}
@@ -120,7 +162,7 @@ class App extends React.Component {
               id={individual.id}
               key={individual.id}
             />)}
-
+        </tbody>
         </table>
       </>
     );
