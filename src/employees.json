@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Michael Scott",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/dc/MichaelScott.png",
+    "phone": "(570) 555-2619",
+    "email": "mscott@dundermifflin.com",
+    "birthday": "March 15, 1964"
+  },
+  {
+    "id": 2,
+    "name": "Pam Beesly",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/67/Pam_Beesley.jpg",
+    "phone": "(272) 234-2241",
+    "email": "pbeesly@dundermifflin.com",
+    "birthday": "March 25, 1979"
+  },
+  {
+    "id": 3,
+    "name": "Dwight Schrute",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/cd/Dwight_Schrute.jpg",
+    "phone": "(717) 555-0177",
+    "email": "dschrute@dundermifflin.com",
+    "birthday": "January 20, 1968"
+  },
+  {
+    "id": 4,
+    "name": "Jim Halpert",
+    "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/Jim-halpert.jpg",
+    "phone": "(252) 342-5567",
+    "email": "jhalpert@dundermifflin.com",
+    "birthday": "October 1, 1978"
+  },
+  {
+    "id": 5,
+    "name": "Creed Bratton",
+    "image": "https://upload.wikimedia.org/wikipedia/en/c/cd/CreedBratton%28TheOffice%29.jpg",
+    "phone": "(272) 432-5678",
+    "email": "cbratton@@dundermifflin.com",
+    "birthday": "February 8, 1943"
+  },
+  {
+    "id": 6,
+    "name": "Jan Levinson",
+    "image": "https://upload.wikimedia.org/wikipedia/en/d/d1/Melora_Hardin_as_Jan_Levinson.png",
+    "phone": "(917) 436-5683",
+    "email": "jan@serenitybyjan",
+    "birthday": "June 29, 1967"
+  },
+  {
+    "id": 7,
+    "name": "Kelly Erin Hannon",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/93/Erin_Hannon.jpg",
+    "phone": "(570) 904-5026",
+    "email": "khannon@dundermifflin.com",
+    "birthday": "May 1, 1986"
+  },
+  {
+    "id": 8,
+    "name": "Kevin Malone",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/60/Office-1200-baumgartner1.jpg",
+    "phone": "(570) 345-3324",
+    "email": "kmalone@dundermifflin.com",
+    "birthday": "June 1, 1968"
+  },
+  {
+    "id": 9,
+    "name": "Angela Martin",
+    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Angela_Martin.jpg",
+    "phone": "(570) 567-2345",
+    "email": "amartin@dundermifflin.com",
+    "birthday": "November 11, 1974"
+  },
+  {
+    "id": 10,
+    "name": "Andy Bernard",
+    "image": "https://upload.wikimedia.org/wikipedia/en/8/84/Andy_Bernard_photoshot.jpg",
+    "phone": "(570) 662-3456",
+    "email": "abernard@dundermifflin.com",
+    "birthday": "August 6, 1973"
+  },
+  {
+    "id": 11,
+    "name": "Toby Flenderson",
+    "image": "https://upload.wikimedia.org/wikipedia/en/1/18/Toby_Flenderson_promo_picture.jpg",
+    "phone": "(570) 237-5432",
+    "email": "tflenderson@dundermifflin.com",
+    "birthday": "February 22, 1963"
+  },
+  {
+    "id": 12,
+    "name": "Stanley Hudson",
+    "image": "https://upload.wikimedia.org/wikipedia/en/2/23/Stanley_Hudson.jpg",
+    "phone": "(570) 432-6735",
+    "email": "shudson@dundermifflin.com",
+    "birthday": "February 19, 1958"
+  },
+  {
+    "id": 13,
+    "name": "Darryl Philbin",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/65/DarrylPhilbin.jpg",
+    "phone": "(308) 736-8686",
+    "email": "dphilbin-SHIP@dundermifflin.com",
+    "birthday": "October 25, 1971"
+  },
+  {
+    "id": 14,
+    "name": "Ryan Howard",
+    "image": "https://upload.wikimedia.org/wikipedia/en/9/91/Ryan_Howard_%28The_Office%29.jpg",
+    "phone": "(308) 786-4983",
+    "email": "rhoward@dundermifflin.com",
+    "birthday": "July 31, 1979"
+  },
+  {
+    "id": 15,
+    "name": "Holly Flax",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/f4/Hollytheoffice.jpg",
+    "phone": "(603) 235-4345",
+    "email": "hflax-HR@dundermifflin.com",
+    "birthday": "May 3, 1968"
+  },
+  {
+    "id": 16,
+    "name": "Kelly Kapoor",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/69/Kelly_Kapoor.jpg",
+    "phone": "(308) 786-4983",
+    "email": "kkapoor@dundermifflin.com",
+    "birthday": "February 5, 1980"
+  },
+  {
+    "id": 17,
+    "name": "Karen Filippelli",
+    "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/KarenFilippelli.jpg/440px-KarenFilippelli.jpg",
+    "phone": "(203) 347-3356",
+    "email": "kfilippelli@dundermifflin.com",
+    "birthday": "February 25, 1976"
+  },
+  {
+    "id": 18,
+    "name": "Meredith Palmer",
+    "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Meredith_Palmer.jpg",
+    "phone": "(308) 345-2245",
+    "email": "mpalmer-SUPPLY@dundermifflin.com",
+    "birthday": "May 12, 1959"
+  },
+  {
+    "id": 19,
+    "name": "Oscar Martinez",
+    "image": "https://upload.wikimedia.org/wikipedia/en/5/54/Oscar_Martinez_of_The_Office.jpg",
+    "phone": "(308) 457-9745",
+    "email": "omartinez@dundermifflin.com",
+    "birthday": "November 18, 1958"
+  },
+  {
+    "id": 20,
+    "name": "Phyllis Vance",
+    "image": "https://upload.wikimedia.org/wikipedia/en/f/ff/Phyllis_Lapin-Vance.jpg",
+    "phone": "(308) 455-5452",
+    "email": "pvance@dundermifflin.com",
+    "birthday": "July 10, 1951"
+  }
+]
