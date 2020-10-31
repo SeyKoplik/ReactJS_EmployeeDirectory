@@ -5,7 +5,7 @@
 ## Description
 Employee Directory created with React using components to break up the application's user interface, manage component states, and respond to user events.
 
-Allows a user to view entire directory when page and then sort through the criterias available and render a result dynamically while typing in the input box a certain search query.
+Allows a user to view entire directory when page loads and then sort through the criterias available and render a result dynamically while typing in the input box a certain search query.
 
 The use of components and setting states is primarily used to be able to make changes happen as the user interacts with the page and .map() and .filter() functions are used to loop around the results of the query as requested.
 
@@ -17,7 +17,7 @@ The use of components and setting states is primarily used to be able to make ch
 
 ## Installation
 This app was created using Reactjs
-Enter the following command in the terminal to initiate a react app
+Enter the following command in the terminal to initiate a react app titled "employeedirectory"
 ```shell
 npx create-react-app employeedirectory
 ```
