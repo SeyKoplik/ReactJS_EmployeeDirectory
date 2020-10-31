@@ -9,7 +9,7 @@ Allows a user to view entire directory when page loads and then sort through the
 
 The use of components and setting states is primarily used to be able to make changes happen as the user interacts with the page and .map() and .filter() functions are used to loop around the results of the query as requested.
 
-## Screenshort Previews
+## Screenshot Previews
 
 <img src="./public/assets/reactjs_demo.gif" width="75%">
 
