@@ -13,27 +13,13 @@ class App extends React.Component {
   }
 
   handleInputChange = event => {
-    // const employees = this.state.employees;
-    let query = event.target.value;
-    const sortOrder = this.state.sortOrder
-    // start search input change here to filter
-    // const filteredName = employees.filter(result =>
-    //   result.name.toLowerCase().toString().includes(query)
-    // );
-    // const filteredBirthday = employees.filter(result =>
-    //   result.birthday.toLowerCase().toString().includes(query)
-    // );
-    // const filteredEmail = employees.filter(result =>
-    //   result.email.toLowerCase().toString().includes(query)
-    // );
-    // const filteredPhone = employees.filter(result =>
-    //   result.phone.toLowerCase().toString().includes(query)
-    // );
+    let query = event.target.value.toLowerCase();
+
     const filteredEmployees = employees.filter(result =>
       result.name.toLowerCase().toString().includes(query) ||
       result.birthday.toLowerCase().toString().includes(query) ||
       result.email.toLowerCase().toString().includes(query) ||
-      result.phone.toLowerCase().toString().includes(query)
+      result.phone.toLowerCase().toString().includes(query) 
     );
 
     this.setState({ employees: filteredEmployees })
