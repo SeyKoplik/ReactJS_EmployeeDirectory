@@ -9,12 +9,11 @@ class App extends React.Component {
   state = {
     employees: employees,
     search: "",
-    sortOrder: "ascending" // ascending and descending sort
+    sortOrder: "ascending" 
   }
 
   handleInputChange = event => {
     let query = event.target.value.toLowerCase();
-
     const filteredEmployees = employees.filter(result =>
       result.name.toLowerCase().toString().includes(query) ||
       result.birthday.toLowerCase().toString().includes(query) ||
