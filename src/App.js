@@ -68,13 +68,13 @@ class App extends React.Component {
   }
 
   compareSortASCbday(a, b) {
-    if (a.birthday > b.birthday) return 1;
-    if (b.birthday > a.birthday) return -1;
+    if (Date.parse(a.birthday) > Date.parse(b.birthday)) return 1;
+    if (Date.parse(b.birthday) > Date.parse(a.birthday)) return -1;
     return 0;
   };
   compareSortDESCbday(a, b) {
-    if (a.birthday > b.birthday) return -1;
-    if (b.birthday > a.birthday) return 1;
+    if (Date.parse(a.birthday) > Date.parse(b.birthday)) return -1;
+    if (Date.parse(b.birthday) > Date.parse(a.birthday)) return 1;
     return 0;
   };
   handleSortClickBday = () => {
